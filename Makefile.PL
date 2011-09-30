@@ -30,6 +30,8 @@ keywords(qw[Perl DateTimeX overload constant]);
 	
 write_doap_changes;
 write_doap_changes_xml;
+auto_license;
+auto_manifest;
 
 auto_install;
 WriteAll(
