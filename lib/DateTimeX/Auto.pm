@@ -2,7 +2,7 @@ package DateTimeX::Auto;
 
 use 5.008;
 use strict;
-use base qw[DateTime Exporter];
+use parent qw[DateTime Exporter];
 use overload '""' => \&_dtxa_stringify;
 use UNIVERSAL::ref;
 
