@@ -77,3 +77,10 @@ my:v_0-006
 		dcs:item   [ rdfs:label "Stop bundling old version of Scalar::Util."@en ; a dcs:Packaging ];
 	].
 
+
+`DateTimeX-Auto 0.007 cpan:TOBYINK`
+	issued    2014-09-10;
+	changeset [
+		item "Switch to Dist::Inkt."^^Packaging;
+	].
+
