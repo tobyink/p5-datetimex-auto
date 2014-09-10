@@ -1,0 +1,12 @@
+@prefix deps:  <http://ontologi.es/doap-deps#> .
+
+<http://purl.org/NET/cpan-uri/dist/DateTimeX-Auto/project>
+	deps:runtime-requirement         [ deps:on "Carp 0"^^deps:CpanId ];
+	deps:runtime-requirement         [ deps:on "DateTime 0"^^deps:CpanId ];
+	deps:runtime-requirement         [
+		deps:on "DateTime::Format::Strptime 0"^^deps:CpanId;
+	];
+	deps:runtime-requirement         [ deps:on "UNIVERSAL::ref 0"^^deps:CpanId ];
+	deps:runtime-requirement         [ deps:on "Object::AUTHORITY 0"^^deps:CpanId ];
+	deps:test-requirement            [ deps:on "Test::More 0.61"^^deps:CpanId ].
+
