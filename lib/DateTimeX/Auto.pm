@@ -11,7 +11,7 @@ use warnings;
 	
 	BEGIN {
 		$DateTimeX::Auto::AUTHORITY = 'cpan:TOBYINK';
-		$DateTimeX::Auto::VERSION   = '0.007';
+		$DateTimeX::Auto::VERSION   = '0.008';
 	}
 	
 	our %EXPORT_TAGS = (
@@ -85,7 +85,7 @@ use warnings;
 	
 	BEGIN {
 		$DateTimeX::Auto::DateTime::AUTHORITY = 'cpan:TOBYINK';
-		$DateTimeX::Auto::DateTime::VERSION   = '0.007';
+		$DateTimeX::Auto::DateTime::VERSION   = '0.008';
 	}
 	
 	sub from_object
@@ -197,7 +197,7 @@ use warnings;
 	
 	BEGIN {
 		$DateTimeX::Auto::Duration::AUTHORITY = 'cpan:TOBYINK';
-		$DateTimeX::Auto::Duration::VERSION   = '0.007';
+		$DateTimeX::Auto::Duration::VERSION   = '0.008';
 	}
 	
 	sub new
