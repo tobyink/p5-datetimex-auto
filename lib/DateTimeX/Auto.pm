@@ -217,11 +217,11 @@ use warnings;
 			(?:([\d\.]*)M)?    # n Months
 			(?:([\d\.]*)W)?    # n Weeks
 			(?:([\d\.]*)D)?    # n Days
-			(?:                 
-				 T               # And a time of...
-				 (?:([\d\.]*)H)? # n Hours
-				 (?:([\d\.]*)M)? # n Minutes
-				 (?:([\d\.]*)S)? # n Seconds
+			(?:
+				T               # And a time of...
+				(?:([\d\.]*)H)? # n Hours
+				(?:([\d\.]*)M)? # n Minutes
+				(?:([\d\.]*)S)? # n Seconds
 			)?
 		/ix;
 			
