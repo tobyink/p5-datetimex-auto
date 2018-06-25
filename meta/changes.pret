@@ -91,3 +91,10 @@ my:v_0-006
 		item "Use Exporter::Shiny instead of Exporter.pm."^^Change;
 	].
 
+`DateTimeX-Auto 0.009 cpan:TOBYINK`
+	issued    2018-06-25;
+	changeset [
+		item "Make UNIVERSAL::ref optional on newer Perls."^^Update;
+		item "Use parent.pm in place of base.pm."^^Update;
+	].
+
