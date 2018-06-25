@@ -78,7 +78,7 @@ use warnings;
 	package DateTimeX::Auto::DateTime;
 	
 	use base qw[DateTime];
-	use UNIVERSAL::ref;
+	BEGIN { eval 'use UNIVERSAL::ref;' };
 	use constant ref => 'DateTime';
 	
 	use DateTime::Format::Strptime qw[];
@@ -192,7 +192,7 @@ use warnings;
 	package DateTimeX::Auto::Duration;
 	
 	use base qw[DateTime::Duration];
-	use UNIVERSAL::ref;
+	BEGIN { eval 'use UNIVERSAL::ref;' };
 	use constant ref => 'DateTime::Duration';
 	
 	BEGIN {
@@ -342,8 +342,8 @@ digits after the ninth will be zeroed out.
  print "$dt\n"; # 1234-12-12T12:34:56.123456789000000000
 
 Objects are blessed into the C<DateTimeX::Auto::DateTime> class which
-inherits from C<DateTime>. They use L<UNIVERSAL::ref> to masquerade as
-plain C<DateTime> objects.
+inherits from C<DateTime>. They use L<UNIVERSAL::ref> (if installed) to
+masquerade as plain C<DateTime> objects.
 
  print ref('2000-01-01')."\n";   # DateTime
 
