@@ -77,7 +77,7 @@ use warnings;
 {
 	package DateTimeX::Auto::DateTime;
 	
-	use base qw[DateTime];
+	use parent qw[DateTime];
 	BEGIN { eval 'use UNIVERSAL::ref;' };
 	use constant ref => 'DateTime';
 	
@@ -191,7 +191,7 @@ use warnings;
 {
 	package DateTimeX::Auto::Duration;
 	
-	use base qw[DateTime::Duration];
+	use parent qw[DateTime::Duration];
 	BEGIN { eval 'use UNIVERSAL::ref;' };
 	use constant ref => 'DateTime::Duration';
 	
